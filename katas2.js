@@ -16,7 +16,7 @@ function multiply(n1, n2){
 
     let acumulador = 0
 
-    for(let i = 0; i < n2; i++){
+    for(let i = 0; i < n2; i = add(i, 1)){
         acumulador += add(0, n1)
     }
     return acumulador
@@ -34,8 +34,8 @@ function power(x, n){
 
     let resultPower = 1
 
-    for(let i = 0; i < n; i++){
-        resultPower *= multiply(1, x)
+    for(let i = 0; i < n; i = add(i, 1)){
+        resultPower = multiply(resultPower, x)
     }
 
     return resultPower  
@@ -52,7 +52,7 @@ function factorial(n){
 
     let resultFactorial = 1
 
-    for(let i = 1 ; i <= n; i++){
+    for(let i = 1 ; i <= n; i = add(i, 1)){
         resultFactorial = multiply(resultFactorial, i)
     }
 
