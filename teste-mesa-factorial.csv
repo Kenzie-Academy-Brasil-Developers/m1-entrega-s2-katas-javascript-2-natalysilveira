@@ -1,0 +1,6 @@
+resultFactorial;n;i;i < = n;i ++;resultFactorial = multiply (resultFactorial, i);
+1;4;1;true;2;1*1;
+1;4;2;true;3;1*2;
+2;4;3;true;4;2*3;
+6;4;4;true;5;6*4;
+24;4;5;false;;;
