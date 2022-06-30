@@ -17,7 +17,7 @@ function multiply(n1, n2){
     let acumulador = 0
 
     for(let i = 0; i < n2; i = add(i, 1)){
-        acumulador += add(0, n1)
+        acumulador = add(acumulador, n1)
     }
     return acumulador
 }
